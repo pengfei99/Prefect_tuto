@@ -37,13 +37,21 @@ You should see your terminal change to the following form
 Install ipython kernel 
 
 ```bash
+pip install ipykernel
+```
+
+{% hint style="info" %}
+
+
+```bash
 (prefect) jovyan@3a8b3571afe2:~$ pip install ipykernel
 ```
+{% endhint %}
 
 Load your conda virtual env to your ipykernel 
 
 ```bash
-(prefect) jovyan@3a8b3571afe2:~$ python -m ipykernel install --user --name=prefect
+python -m ipykernel install --user --name=prefect
 ```
 
 If everything goes fine, you should see the following return text, and in your jupyter you will find a new kernel prefect
